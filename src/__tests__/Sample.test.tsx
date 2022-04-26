@@ -8,7 +8,7 @@ describe('sample', () => {
   })
   it('render', () => {
     render(<App />)
-    expect(screen.getByText('App')).toBeTruthy()
+    expect(screen.getByText('Layout')).toBeTruthy()
     expect(10).toEqual(10)
   })
 })
