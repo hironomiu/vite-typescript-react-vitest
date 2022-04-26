@@ -5,13 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3030
+    port: 3030,
   },
-  optimizeDeps:{
-    entries:'__tests__'
+  optimizeDeps: {
+    entries: '__tests__',
   },
   test: {
-    globals:true,
-    environment:'happy-dom'
-  }
+    globals: true,
+    environment: 'happy-dom',
+  },
 })

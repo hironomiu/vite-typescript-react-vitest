@@ -1,10 +1,14 @@
-import { render,screen } from '@testing-library/react'
-import {describe,expect,it} from 'vitest'
+import { render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
 import App from '../App'
-describe('first', () => {
-  it('it',() => {
-    render(<App/>)
+
+describe('sample', () => {
+  it('equal', () => {
+    expect(10).toEqual(10)
+  })
+  it('render', () => {
+    render(<App />)
     expect(screen.getByText('App')).toBeTruthy()
     expect(10).toEqual(10)
   })
- })
+})
