@@ -8,7 +8,7 @@
 
 ### Testing
 
-vitest
+vitest + @testing-library/react + happy-dom 
 
 ```
 npm install --save-dev vitest

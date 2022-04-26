@@ -4,7 +4,7 @@ import App from '../App'
 describe('first', () => {
   it('it',() => {
     render(<App/>)
-    screen.debug()
+    expect(screen.getByText('App')).toBeTruthy()
     expect(10).toEqual(10)
   })
  })
