@@ -6,8 +6,12 @@
 
 [vite:公式:Scaffolding Your First Vite Project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)以降から実行
 
-### vitest
+### Testing
+
+vitest
 
 ```
 npm install --save-dev vitest
+npm install --save-dev @testing-library/react
+npm install --save-dev happy-dom  
 ```
