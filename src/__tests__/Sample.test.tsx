@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import '@testing-library/dom'
 import { describe, expect, it } from 'vitest'
 import App from '../App'
 
@@ -14,7 +13,7 @@ describe('sample', () => {
     expect(screen.getByTestId('count').textContent).toBe('0')
     expect(screen.getByTestId('increment-button')).toBeTruthy()
     userEvent.click(screen.getByTestId('decrement-button'))
-    expect(await screen.findByTestId('count')).toBeTruthy()
+    expect(await screen.findByTestId('count')).toBeInTheDocument()
     // TODO: countが0になる（期待する値は-1）
     screen.debug()
   })
