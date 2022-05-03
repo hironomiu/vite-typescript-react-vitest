@@ -1,12 +1,12 @@
-import React from 'react'
 import Header from './Header'
+import Main from './Main'
 
 const Layout = () => {
   return (
     <div>
       <Header />
       Layout
-      <button data-testid="button">Click!</button>
+      <Main />
     </div>
   )
 }

@@ -8,11 +8,14 @@ describe('sample', () => {
   it('equal', () => {
     expect(10).toEqual(10)
   })
-  it('render', () => {
+  it('render', async () => {
     render(<App />)
     expect(screen.getByText('Layout')).toBeTruthy()
-    expect(10).toEqual(10)
-    expect(screen.getByTestId('button')).toBeTruthy()
-    userEvent.click(screen.getByTestId('button'))
+    expect(screen.getByTestId('count').textContent).toBe('0')
+    expect(screen.getByTestId('increment-button')).toBeTruthy()
+    userEvent.click(screen.getByTestId('decrement-button'))
+    expect(await screen.findByTestId('count')).toBeTruthy()
+    // TODO: countが0になる（期待する値は-1）
+    screen.debug()
   })
 })
