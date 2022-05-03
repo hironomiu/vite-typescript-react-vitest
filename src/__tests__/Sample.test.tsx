@@ -14,6 +14,6 @@ describe('sample', () => {
     expect(10).toEqual(10)
     expect(screen.getByTestId('button')).toBeTruthy()
     // TODO: TypeError: target.ownerDocument.createRange is not a function
-    // userEvent.click(screen.getByTestId('button'))
+    userEvent.click(screen.getByTestId('button'))
   })
 })

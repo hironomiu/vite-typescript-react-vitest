@@ -13,11 +13,6 @@ vitest + @testing-library/react + happy-dom
 ```
 npm install --save-dev vitest
 npm install --save-dev @testing-library/react
-npm install --save-dev happy-dom
-```
-
-user-event
-
-```
-npm install --save-dev @testing-library/user-event @testing-library/dom @testing-library/jest-dom
+npm install --save-dev @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event
+npm install --save-dev vite-tsconfig-paths @vitejs/plugin-react happy-dom jsdom
 ```
