@@ -3,9 +3,8 @@ import Main from './Main'
 
 const Layout = () => {
   return (
-    <div>
+    <div className="flex flex-col" data-testid="layout-div">
       <Header />
-      Layout
       <Main />
     </div>
   )
