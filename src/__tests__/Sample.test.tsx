@@ -15,8 +15,8 @@ describe('sample', () => {
     expect(screen.getByTestId('increment-button')).toBeTruthy()
     userEvent.click(screen.getByTestId('decrement-button'))
 
-    screen.debug()
     expect(await screen.findByTestId('count')).toBeInTheDocument()
     // TODO: countが0になる（期待する値は-1）
+    screen.debug()
   })
 })
