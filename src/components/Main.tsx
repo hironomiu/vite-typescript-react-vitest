@@ -13,11 +13,21 @@ const Main = () => {
   return (
     <main className="flex flex-col items-center">
       <div className="mt-10 text-xl">
-        <button onClick={handleDecrement} data-testid="decrement-button">
+        <button
+          onClick={handleDecrement}
+          data-testid="decrement-button"
+          className="mx-2"
+        >
           -
         </button>
-        <span data-testid="count">{count}</span>
-        <button onClick={handleIncrement} data-testid="increment-button">
+        <span data-testid="count" className="mx-2">
+          {count}
+        </span>
+        <button
+          onClick={handleIncrement}
+          data-testid="increment-button"
+          className="mx-2"
+        >
           +
         </button>
       </div>
