@@ -33,8 +33,19 @@ npm install --save-dev vitest
 npm install --save-dev @testing-library/react
 npm install --save-dev @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event
 npm install --save-dev vite-tsconfig-paths @vitejs/plugin-react happy-dom jsdom
+npm install --save-dev @happy-dom/jest-environment
 ```
 
 ### Tailwind
 
 [Install Tailwind CSS with Create React App](https://tailwindcss.com/docs/guides/create-react-app)
+
+## Memo
+
+パッケージ全体のバージョンを上げた際のオペレーション
+
+```
+npx -p npm-check-updates -c "ncu"
+npx npm-check-updates -u
+npm install
+```
