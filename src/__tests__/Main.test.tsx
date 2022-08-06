@@ -9,7 +9,8 @@ describe('Main', () => {
     expect(screen.getByRole('button', { name: '+' })).toBeInTheDocument()
     expect(screen.getByTestId('count').textContent).toBe('0')
     userEvent.click(screen.getByRole('button', { name: '+' }))
-
+    userEvent.click(screen.getByTestId('increment-button'))
+    ;(await screen.findByTestId('count')).textContent
     screen.debug()
   })
 })
