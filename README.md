@@ -1,4 +1,4 @@
-# vite-typescript-react
+# vite-typescript-react-vitest
 
 [vite:公式:Scaffolding Your First Vite Project](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)、[vite:公式:Community Templates](https://vitejs.dev/guide/#community-templates)での TypeScript + React の作成例
 
